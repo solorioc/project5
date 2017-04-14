@@ -18,7 +18,8 @@ all: PutHTML
 PutHTML:
 	cp interactive_periodic_table.html /var/www/html/class/softdev/$(USER)
 	cp stylesheet_periodic_table.css /var/www/html/class/softdev/$(USER)
-	cp xml_processing.js /var/www/html/class/softdev/$(USER)
+	cp java_periodic_table.js /var/www/html/class/softdev/$(USER)
+	cp allelements.xml /var/www/html/class/softdev/$(USER)
 	#echo "Current contents of your HTML directory: "
 	#ls -l /var/www/html/class/softdev/$(USER)
 
