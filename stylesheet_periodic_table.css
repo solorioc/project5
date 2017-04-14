@@ -4,3 +4,49 @@ body {
 	color: #ffffff;
 }
 
+.containter {
+	position: relative;
+	margin-right: -1px;
+}	
+
+
+.row {
+	clear: both; /*This makes sure the rows are below each other*/
+	height: 10%; /*The height of the row is 10%*/
+}
+
+.box {
+	float: left; 
+	position: relative;
+	width: 5.55%; /*This splits the width of the page into 18 equal parts*/
+	height: 100%; /*Height is 100% of the row*/
+}
+
+.atom {
+	position: absolute;
+	box-sizing: border-box; /*padding in the box will be internal*/
+	bottom: 1px;
+	right: 1px;
+	text-align: center;
+}
+
+.num, .mass { /*Places the mass and atomic number*/
+	position: absolute;
+	font-size: 8px;
+	color: #ffffff;
+	opacity: 60%;
+}
+
+.mass {
+	bottom: 4px;
+}
+.sym {
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	font-size: 9px;
+	color: #ffffff;
+	opacity: 60%;
+	
+	
+}
