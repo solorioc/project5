@@ -5,14 +5,14 @@ body {
 }
 
 .containter {
-	position: relative;
+	position: fixed;
 	margin-right: -1px;
 }	
 
 
 .row {
 	clear: both; /*This makes sure the rows are below each other*/
-	height: 10%; /*The height of the row is 10%*/
+	height: 11%; /*The height of the row is 10%*/
 }
 
 .box {
@@ -27,26 +27,36 @@ body {
 	box-sizing: border-box; /*padding in the box will be internal*/
 	bottom: 1px;
 	right: 1px;
-	text-align: center;
+	background-color: rgba(63, 191, 63, 0.7);
+	box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+	width: 90%;
+	height: 90%;
 }
 
-.num, .mass { /*Places the mass and atomic number*/
+.num { /*Places the mass and atomic number*/
 	position: absolute;
-	font-size: 8px;
+	margin-left: 1px;
+	margin-top: 1px;
+	font-size: 1vw;
 	color: #ffffff;
 	opacity: 60%;
 }
 
 .mass {
-	bottom: 4px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0px;
+	font-size: 1vw;
 }
+
 .sym {
 	position: absolute;
-	top: 50%;
-	margin-top: -4px;
-	font-size: 9px;
+	width: 100%;
+	text-align: center;
+	top: 22%;
+	font-size: 2.5vw;
+	font-weight: bold;
 	color: #ffffff;
-	opacity: 60%;
-	
-	
+	opacity: 60%;	
 }
