@@ -24,4 +24,4 @@ PutHTML:
 	#ls -l /var/www/html/class/softdev/$(USER)
 
 clean:
-	rm -f *.o interactive_periodic_table.html stylesheet_periodic_table.css xml_processing.js
+	rm -f *.o interactive_periodic_table.html stylesheet_periodic_table.css java_periodic_table.js
