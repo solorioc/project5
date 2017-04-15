@@ -27,7 +27,7 @@ body {
 	box-sizing: border-box; /*padding in the box will be internal*/
 	bottom: 1px;
 	right: 1px;
-	background-color: rgba(63, 191, 63, 0.7);
+	background-color: rgba(166, 6, 86, 0.7);
 	box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
 	width: 90%;
 	height: 90%;
@@ -59,4 +59,66 @@ body {
 	font-weight: bold;
 	color: #ffffff;
 	opacity: 60%;	
+}
+
+/* color first column*/
+.row:nth-child(1) .box:nth-child(1) .atom,
+.row:nth-child(2) .box:nth-child(1) .atom,
+.row:nth-child(3) .box:nth-child(1) .atom,
+.row:nth-child(4) .box:nth-child(1) .atom,
+.row:nth-child(5) .box:nth-child(1) .atom,
+.row:nth-child(6) .box:nth-child(1) .atom,
+.row:nth-child(7) .box:nth-child(1) .atom {
+	background-color: rgba(244, 71, 158, 0.7);
+}
+
+/* color second column */
+.row:nth-child(1) .box:nth-child(2) .atom,
+.row:nth-child(2) .box:nth-child(2) .atom,
+.row:nth-child(3) .box:nth-child(2) .atom,
+.row:nth-child(4) .box:nth-child(2) .atom,
+.row:nth-child(5) .box:nth-child(2) .atom,
+.row:nth-child(6) .box:nth-child(2) .atom,
+.row:nth-child(7) .box:nth-child(2) .atom {
+	background-color: rgba(243, 16, 130, 0.7);
+}
+
+/* color nonmetals */
+.row:nth-child(2) .box:nth-child(n+14) .atom,
+.row:nth-child(3) .box:nth-child(n+15) .atom,
+.row:nth-child(4) .box:nth-child(n+16) .atom,
+.row:nth-child(5) .box:nth-child(n+17) .atom {
+	background-color: rgba(243, 68, 243, 0.7);
+}
+
+/* transition metals colored by background color */
+
+/* color the 'semimetals--this section is kind of ambiguous */
+.box:nth-child(13) .atom,
+.box:nth-child(14) .atom,
+.box:nth-child(15) .atom,
+.box:nth-child(16) .atom,
+.box:nth-child(17) .atom {
+	background-color: rgba(250, 121, 186, 0.7);
+}
+
+/* color the noble gasses */
+.row:nth-child(1) .box:nth-child(18) .atom,
+.row:nth-child(2) .box:nth-child(18) .atom,
+.row:nth-child(3) .box:nth-child(18) .atom,
+.row:nth-child(4) .box:nth-child(18) .atom,
+.row:nth-child(5) .box:nth-child(18) .atom,
+.row:nth-child(6) .box:nth-child(18) .atom {
+	background-color: rgba(114, 9, 220, 0.7);
+}
+
+/* color the unidentified stuff, uut -> uuo */
+.row:nth-child(7) .box:nth-child(n+13) .atom {
+	background-color: rgba(163, 147, 163, 0.7);
+}
+
+/* color the lanthanoids/actanoids*/
+.row:nth-child(9) .atom,
+.row:nth-child(10) .atom {
+	background-color: rgba(80, 31, 56, 0.7);
 }
