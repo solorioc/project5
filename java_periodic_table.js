@@ -14,6 +14,15 @@
     }
 }
 
+function ShowData(element) {
+	testArea.innerText = 'This is element ' + element;
+}
+
+
+function RemoveData() {
+	testArea.innerText = '';
+}
+
 $(document).ready(function() {
 
 alert('JS Works!');	
