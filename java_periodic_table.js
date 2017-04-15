@@ -16,16 +16,19 @@
 
 $(document).ready(function() {
 
+alert('JS Works!');	
+
 function parse(document) {
 	$(document).find("ATOM").each(function() {
 		
 		$("#content").append(
 			'<p> Symbol: '+$(this).find('SYMBOL').text()+
+			/*
 			'<br />Name: '+$(this).find('NAME').text()+
 			'<br /> Atomic Weight: '+$(this).find('ATOMIC_WEIGHT').text()+
 			'<br /> Atomic Number'+$(this).find('ATOMIC_NUMBER').text()+
-			'<br /> Oxidation States'+$(this).find('OXIDATION_STATES').text()+
-			'<br /> Boiling Point'+$(this).find('BOILING_POINT').text()+
+			'<br /> Oxidation States: '+$(this).find('OXIDATION_STATES').text()+
+			'<br /> Boiling Point: '+$(this).find('BOILING_POINT').text()+
 			'<br /> Density: '+$(this).find('DENSITY').text()+
 			'<br /> Electron Configuration: '+$(this).find('ELECTRON_CONFIGURATION').text()+
 			'<br /> Electronegativity: '+$(this).find('ELECTRONNEGATIVITY').text()+
@@ -34,6 +37,7 @@ function parse(document) {
 			'<br /> Specific Heat Capacity: '+$(this).find('SPECIFIC_HEAT_CAPACITY').text()+
 			'<br /> Ionization Potential: '+$(this).find('IONIZATION_POTENTIAL').text()+
 			'<br /> Thermal Conductivity: '+$(this).find('THERMAL_CONDUCTIVITY').text()+
+			*/
 			'</p>'
 		);	
 	});
@@ -47,7 +51,7 @@ $.ajax({
      });
 });
 
-
+/*
 window.onload = function getName() {
 	alert('JS Works!');	
-}
+}*/
