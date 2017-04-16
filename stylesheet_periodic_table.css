@@ -12,6 +12,20 @@ body {
 	position: absolute;
 	top: 12.6%;
 	left: 12.0%;
+	overflow: auto;
+}
+
+#elementName {
+	top: -5%;
+	font-size: 1.5vw;
+	text-decoration: underline;
+	margin-bottom: 0px;
+	margin-top: 0.5vw;
+}
+
+.elementProps{
+	font-size: 1vw;
+	display:inline block;
 }
 
 .containter {
@@ -50,6 +64,7 @@ body {
 	font-size: 1vw;
 	color: #ffffff;
 	opacity: 60%;
+	
 }
 
 .mass {
@@ -69,6 +84,7 @@ body {
 	font-weight: bold;
 	color: #ffffff;
 	opacity: 60%;	
+	vertical-align: middle;
 }
 
 .row:nth-child(8) {

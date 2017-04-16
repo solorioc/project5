@@ -19,72 +19,73 @@
 	<div id="testArea"></div>
 	
 	<div id="infoDisplay">
-		<h3>Element Name</h3>
+		<h3 id="elementName">Element Name</h3>
 		
-		<table>
+		<table border="0" cellpadding="0" cellspacing="0">
 			<tbody>
 				<tr>
 					<td>
-						<p>Symbol: </p>
+						<p class="elementProps">Symbol: </p>
+						<p class="elementProps" id="symbol"></p>
 					</td>
 					
 					<td>
-						<p>Density: </p>
+						<p class="elementProps" id="density">Density: </p>
 					</td>
 					
 					<td>
-						<p> Specific Heat Capacity: </p>
-					</td>
-					
-				</tr>
-				
-				<tr>
-					<td>
-						<p>Atomic Weight: </p>
-					</td>
-					
-					<td>
-						<p>Electron Configuration: </p>
-					</td>
-					
-					<td>
-						<p> Ionization Potential: </p>
+						<p class="elementProps" id="specHeat"> Specific Heat Capacity: </p>
 					</td>
 					
 				</tr>
 				
 				<tr>
 					<td>
-						<p>Atomic Number: </p>
+						<p class="elementProps" id="weight">Atomic Weight: </p>
 					</td>
 					
 					<td>
-						<p>Electronegativity:</p>
+						<p class="elementProps" id="electronConfig">Electron Configuration: </p>
 					</td>
 					
 					<td>
-						<p> Thermal Conductivity: </p>
-					</td>
-				</tr>
-				
-				<tr>
-					<td>
-						<p>Oxidation States:  </p>
-					</td>
-					
-					<td>
-						<p> Atomic Radius: </p>
+						<p class="elementProps" id="ionPotential"> Ionization Potential: </p>
 					</td>
 					
 				</tr>
 				
 				<tr>
 					<td>
-						<p>Boiling Point:  </p>
+						<p class="elementProps" id="atomicNum">Atomic Number: </p>
 					</td>
 					
 					<td>
-						<p> Atomic Volume: </p>
+						<p class="elementProps" id="electroNeg">Electronegativity:</p>
+					</td>
+					
+					<td>
+						<p class="elementProps" id="thermConductivity"> Thermal Conductivity: </p>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<p class="elementProps" id="oxStates">Oxidation States:  </p>
+					</td>
+					
+					<td>
+						<p class="elementProps" id="atomRadius"> Atomic Radius: </p>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>
+						<p class="elementProps" id="boilingPoint">Boiling Point:  </p>
+					</td>
+					
+					<td>
+						<p class="elementProps" id="atomicVol"> Atomic Volume: </p>
 					</td>
 
 				</tr>
@@ -95,7 +96,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="box">
-				<div class="atom" id="H" onmouseover="javascript: ShowData('H')" onmouseout="javascript: RemoveData()">
+				<div class="atom">
 					<div class="num">1</div>
 					<div class="sym">H</div>
 					<div class="mass">1.008</div>

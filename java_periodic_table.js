@@ -14,73 +14,43 @@
     }
 }
 
-function ShowData(element) {
-	testArea.innerText = 'This is element ' + element;
-}
-
-
-function RemoveData() {
-	testArea.innerText = '';
-}
-
 $(document).ready(function() {
 
 	alert('JavaScript is working!');
 
-	/*$('.atom').on( "mouseover", function() {
-		alert('Hovering works!');
-	});
-	*/
-	function parse(document) {
-		$(document).find("ATOM").each(function() {
-		
-			$("#content").append(
-				'<p> Symbol: '+$(this).find('SYMBOL').text()+
-				/*
-				'<br />Name: '+$(this).find('NAME').text()+
-				'<br /> Atomic Weight: '+$(this).find('ATOMIC_WEIGHT').text()+
-				'<br /> Atomic Number'+$(this).find('ATOMIC_NUMBER').text()+
-				'<br /> Oxidation States: '+$(this).find('OXIDATION_STATES').text()+
-				'<br /> Boiling Point: '+$(this).find('BOILING_POINT').text()+
-				'<br /> Density: '+$(this).find('DENSITY').text()+
-				'<br /> Electron Configuration: '+$(this).find('ELECTRON_CONFIGURATION').text()+
-				'<br /> Electronegativity: '+$(this).find('ELECTRONNEGATIVITY').text()+
-				'<br /> Atomic Radius: '+$(this).find('ATOMIC_RADIUS').text()+
-				'<br /> Atomic Volume: '+$(this).find('ATOMIC_VOLUME').text()+
-				'<br /> Specific Heat Capacity: '+$(this).find('SPECIFIC_HEAT_CAPACITY').text()+
-				'<br /> Ionization Potential: '+$(this).find('IONIZATION_POTENTIAL').text()+
-				'<br /> Thermal Conductivity: '+$(this).find('THERMAL_CONDUCTIVITY').text()+
-				*/
-				'</p>'
-			);	
-		});
-	}
+	$('.atom').on( "click", function() {
+		alert('Clicking works!');
 
-	$.ajax({
+		$.ajax({
 		 url: 'allelements.xml', // name of file you want to parse
 		 dataType: "xml",
 		 success: parse,
 		 error: function(){alert("Error: Something went wrong :'(");}
 		 });
-     
+		 
+	});
+	
+	function parse(document) {
+		$(document).find("ATOM").each(function() {
+		
+			$("#elementName").append($(this).find('NAME').text());
+			$("#symbol").append($(this).find('SYMBOL').text());	
+			$("#density").append($(this).find('DENSITY').text());
+			$("#specHeat").append($(this).find('SPECIFIC_HEAT_CAPACITY').text());
+			$("#weight").append($(this).find('ATOMIC_WEIGHT').text());
+			$("#electronConfig").append($(this).find('ELECTRON_CONFIGURATION').text());
+			$("#ionPotential").append($(this).find('IONIZATION_POTENTIAL').text());
+			$("#atomicNum").append($(this).find('ATOMIC_NUMBER').text());
+			$("#electroNeg").append($(this).find('ELECTRONEGATIVITY').text());
+			$("#thermConductivity").append($(this).find('OXIDATION_STATES').text());
+			$("#atomRadius").append($(this).find('ATOMIC_RADIUS').text());
+			$("#boilingPoint").append($(this).find('BOILING_POINT').text());
+			$("#atomicVol").append($(this).find('ATOMIC_VOLUME').text());
 
+		});
+	}
 }
 );
 
 
 
-/*
-$("#atom").hover(function() {
-        var val = $(this).html();
-        
-        
-        /*$.ajax({
-		 url: 'allelements.xml', // name of file you want to parse
-		 dataType: "xml",
-		 success: parse,
-		 error: function(){alert("Error: Something went wrong :'(");}
-     });
-     
-     alert("Hover works!");
-}
-*/
