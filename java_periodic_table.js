@@ -24,10 +24,13 @@ function RemoveData() {
 }
 
 $(document).ready(function() {
-//$("#atom").mouseover(function() {
 
-	alert('JS Works!');	
+	alert('JavaScript is working!');
 
+	/*$('.atom').on( "mouseover", function() {
+		alert('Hovering works!');
+	});
+	*/
 	function parse(document) {
 		$(document).find("ATOM").each(function() {
 		
@@ -63,6 +66,8 @@ $(document).ready(function() {
 
 }
 );
+
+
 
 /*
 $("#atom").hover(function() {

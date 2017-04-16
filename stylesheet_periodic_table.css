@@ -4,6 +4,16 @@ body {
 	color: #ffffff;
 }
 
+#infoDisplay {
+	z-index: 10;
+	background-color: rgba(140,141,171,0.5);
+	height: 20.6%;
+	width: 54.3%;
+	position: absolute;
+	top: 12.6%;
+	left: 12.0%;
+}
+
 .containter {
 	position: fixed;
 	margin-right: -1px;

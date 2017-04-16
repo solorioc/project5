@@ -17,10 +17,85 @@
 
 <body>
 	<div id="testArea"></div>
+	
+	<div id="infoDisplay">
+		<h3>Element Name</h3>
+		
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<p>Symbol: </p>
+					</td>
+					
+					<td>
+						<p>Density: </p>
+					</td>
+					
+					<td>
+						<p> Specific Heat Capacity: </p>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>
+						<p>Atomic Weight: </p>
+					</td>
+					
+					<td>
+						<p>Electron Configuration: </p>
+					</td>
+					
+					<td>
+						<p> Ionization Potential: </p>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>
+						<p>Atomic Number: </p>
+					</td>
+					
+					<td>
+						<p>Electronegativity:</p>
+					</td>
+					
+					<td>
+						<p> Thermal Conductivity: </p>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<p>Oxidation States:  </p>
+					</td>
+					
+					<td>
+						<p> Atomic Radius: </p>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>
+						<p>Boiling Point:  </p>
+					</td>
+					
+					<td>
+						<p> Atomic Volume: </p>
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="box">
-				<div class="atom" onmouseover="javascript: ShowData('H')" onmouseout="javascript: RemoveData()">
+				<div class="atom" id="H" onmouseover="javascript: ShowData('H')" onmouseout="javascript: RemoveData()">
 					<div class="num">1</div>
 					<div class="sym">H</div>
 					<div class="mass">1.008</div>
