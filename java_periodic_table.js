@@ -53,7 +53,7 @@ $(document).ready(function() {
 		$("#boilingPoint").html($(atomNode).find('BOILING_POINT').text()+" K");
 		$("#atomicVol").html($(atomNode).find('ATOMIC_VOLUME').text()+" cm^3/mole");
 		$("#meltingPoint").html($(atomNode).find('MELTING_POINT').text()+" K");
-		$("#covalentRadius").html($(atomNode).find('Covalent_RADIUS').text()+" &Aring");
+		$("#covalentRadius").html($(atomNode).find('COVALENT_RADIUS').text()+" &Aring");
 		$("#hoFusion").html($(atomNode).find('HEAT_OF_FUSION').text()+" kJ/mole");
 		$("#hoVape").html($(atomNode).find('HEAT_OF_VAPORIZATION').text()+" kJ/mole");
 		
