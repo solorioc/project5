@@ -14,23 +14,54 @@
     }
 }
 
+var XMLRoot;
+
 $(document).ready(function() {
 
 	alert('JavaScript is working!');
 
-	$('.atom').on( "click", function() {
-		alert('Clicking works!');
-
 		$.ajax({
-		 url: 'allelements.xml', // name of file you want to parse
-		 dataType: "xml",
-		 success: parse,
-		 error: function(){alert("Error: Something went wrong :'(");}
-		 });
+			 url: 'allelements.xml', // name of file you want to parse
+			 dataType: "xml",
+			 success: getXML, 
+		 	 error: function(){alert("Error: Something went wrong :'(");}
+		 });  
 		 
+	$('.atom').on("click", function() {
+		alert('Clicking works!');
+		var mass = $(this).find('.mass').text();
+		alert('Mass is: ' + mass);
+		
+		var symNode = $(XMLRoot).find("ATOMIC_WEIGHT:contains('"+mass+"')");
+		
+		alert(symNode.text());
+		
+		var atomNode = symNode.parent();
+		
+		$("#elementName").html($(atomNode).find('NAME').text());
+		$("#symbol").html($(atomNode).find('SYMBOL').text());
+		$("#density").html($(atomNode).find('DENSITY').text());
+		$("#specHeat").html($(atomNode).find('SPECIFIC_HEAT_CAPACITY').text());
+		$("#weight").html($(atomNode).find('ATOMIC_WEIGHT').text());
+		$("#electronConfig").html($(atomNode).find('ELECTRON_CONFIGURATION').text());
+		$("#ionPotential").html($(atomNode).find('IONIZATION_POTENTIAL').text());
+		$("#atomicNum").html($(atomNode).find('ATOMIC_NUMBER').text());
+		$("#electroNeg").html($(atomNode).find('ELECTRONEGATIVITY').text());
+		$("#thermConductivity").html($(atomNode).find('THERMAL_CONDUCTIVITY').text());
+		$("#oxStates").html($(atomNode).find('OXIDATION_STATES').text());
+		$("#atomRadius").html($(atomNode).find('ATOMIC_RADIUS').text());
+		$("#boilingPoint").html($(atomNode).find('BOILING_POINT').text());
+		$("#atomicVol").html($(atomNode).find('ATOMIC_VOLUME').text());
+
 	});
-	
-	function parse(document) {
+});
+
+function getXML(document) {
+		XMLRoot = document;
+		//alert('Loaded XML!');
+}
+
+/*function parse(document) {
 		$(document).find("ATOM").each(function() {
 		
 			$("#elementName").append($(this).find('NAME').text());
@@ -48,9 +79,5 @@ $(document).ready(function() {
 			$("#atomicVol").append($(this).find('ATOMIC_VOLUME').text());
 
 		});
-	}
-}
-);
-
-
+}*/
 

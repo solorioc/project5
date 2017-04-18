@@ -6,7 +6,7 @@ body {
 
 #infoDisplay {
 	z-index: 10;
-	background-color: rgba(140,141,171,0.5);
+	/*background-color: rgba(140,141,171,0.5);*/
 	height: 20.6%;
 	width: 54.3%;
 	position: absolute;
@@ -21,11 +21,17 @@ body {
 	text-decoration: underline;
 	margin-bottom: 0px;
 	margin-top: 0.5vw;
+	text-align: center;
 }
 
 .elementProps{
-	font-size: 1vw;
-	display:inline block;
+	font-size: 1.2vw;
+	display:inline;
+}
+
+#propTable {
+	 border: 0;
+	 margin: 0 auto;
 }
 
 .containter {
