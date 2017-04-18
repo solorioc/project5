@@ -23,10 +23,16 @@ body {
 	margin-top: 0.5vw;
 	text-align: center;
 }
-
-.elementProps{
+/*The title of the element's property in the info display box*/
+.elementPropTitle{
 	font-size: 1.2vw;
 	display:inline;
+}
+/*The value of that property for the element*/
+.elementPropValue{
+	font-size: 1.2vw;
+	display:inline;
+	color: #D3D3D3;
 }
 
 #propTable {
